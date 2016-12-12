@@ -52,7 +52,7 @@ class OpenGraph(dict):
             
             # Add in the user agent header if not provided
             if self.user_agent_header not in self.headers:
-            	self.headers[self.user_agent_header: self.user_agent }
+            	self.headers[self.user_agent_header] = self.user_agent
         else:
             # Always have user agent header at a minimum
             self.headers = { self.user_agent_header: self.user_agent }
